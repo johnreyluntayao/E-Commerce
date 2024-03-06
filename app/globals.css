@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.brand {
+  font-weight: bold;
+  color: #333;
+}
+
+.name {
+  font-weight: bold;
+  color:rgb(8, 10, 10);
+  font-size: 20px;
+}
+
+
+.price {
+  border: red;
+}
+
+.cards-position {
+
+  grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+  display: grid;
+  border: solid 1px;
+  border-radius: 10px;
+  width: 300px;
+  height: auto;
+  align-content: center;
+}
+
+.button {
+  background-color: white;
+  border: solid 2px;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 90px;
+  text-align: center;
+  font-size: 16px;
+
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.button-two{
+  border: solid 1px;
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+
